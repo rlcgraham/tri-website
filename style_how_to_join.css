@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #0f1d3d;
+    padding: 20px 10px;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-icon {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    max-height: 0;                /* Start collapsed */
+    overflow: hidden;            /* Hide overflow */
+    transition: max-height 0.6s ease-in-out;
+    flex-direction: column;
+    background-color: #003366;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 10;
+    display: flex; 
+  }
+  
+  .nav-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #003366;
+    border-bottom: 1px solid #001f3f;
+  }
+  
+  .nav-links a:hover {
+    background-color: #004080;
+  }
+  
+  /* Show class added by JS when menu is open */
+  .nav-links.show {
+    max-height: 500px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+
+  .tryout-description {
+    font-family: 'Helvetica', sans-serif;
+    color: #001f3f;
+    width: 90vw;          /* container takes 90% of viewport width */
+    max-width: 900px;     /* max width to avoid stretching too wide */
+    margin: 20px auto;    /* center horizontally with vertical spacing */
+    padding: 1rem 2vw;    /* vertical 1rem, horizontal padding relative to viewport */
+    box-sizing: border-box;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); /* responsive font size */
+  }
+  
+  .tryout-description .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;          /* fill the tryout-description width */
+    padding-left: 0;      /* no extra padding here */
+  }
+  
+  .tryout-description .container p {
+    width: 100%;          /* paragraphs fill container width */
+    max-width: none;      /* no fixed max-width */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+a {
+    color: #0958a8; /* Change this to any color you want */
+    text-decoration: underline; /* Optional: controls underline */
+  }

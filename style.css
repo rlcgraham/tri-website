@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    height: 100vh;
+  }
+  
+  .navbar {
+    background-color: #0f1d3d;
+    padding: 20px 10px;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-icon {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    font-family: 'Helvetica';
+    font-size: 15px;
+    max-height: 0;                /* Start collapsed */
+    overflow: hidden;            /* Hide overflow */
+    transition: max-height 0.6s ease-in-out;
+    flex-direction: column;
+    background-color: #003366;
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: 10;
+    display: flex; 
+  }
+  
+  .nav-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #003366;
+    border-bottom: 1px solid #001f3f;
+  }
+  
+  .nav-links a:hover {
+    background-color: #004080;
+  }
+  
+  /* Show class added by JS when menu is open */
+  .nav-links.show {
+    max-height: 500px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .video-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Make it fill the full height of the viewport */
+    overflow: hidden;
+    background-color: black;
+    margin-top: 0;
+  }
+
+
+  .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* <- this is the key change */
+  }
+
+  .team-description h2 {
+    font-family: 'Helvetica';
+    position: relative;
+    color: #001f3f;
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+
+  .team-description p {
+    font-family: 'Helvetica';
+    color: #001f3f;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+
+  .team-description p a {
+    color: #0958a8; /* Change this to any color you want */
+    text-decoration: underline; /* Optional: controls underline */
+  }
+  
+  .team-description p a:hover {
+    color: #003366; /* Optional: change color on hover */
+  }
+
+
+  .executive-team {
+    background-color: #0f1d3d;
+    font-family: 'Helvetica';
+    color: white;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+
+  .sponsors h2 {
+    font-family: 'Helvetica';
+    color: #001f3f;
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+
+  .sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .sponsor img {
+    width: 200px;
+    height: 185px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .sponsor p {
+    font-family: 'Helvetica';
+    margin-top: 10px;
+    font-size: 1em;
+    color: #001f3f;
+    margin-bottom: 10px;
+  }
+
+  .contact-us {
+    background-color: #0958a8;
+    padding-bottom: 20px;
+  }
+
+  .contact-us h2 {
+    font-family: 'Helvetica';
+    color: white;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  .contact-us p {
+    font-family: 'Helvetica';
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #3B5998;
+    color: white;
+  }
+
+  .facebook-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+  
+  .facebook-link:hover {
+    color: #004080;
+  }
+  
+  .facebook-link i {
+    margin-right: 8px;
+  }
+
+
+  .instagram-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+  
+  .instagram-link:hover {
+    color: #004080;
+  }
+  
+  .instagram-link i {
+    margin-right: 8px;
+  }
+
+  .mail-link {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+
+  .mail-link:hover {
+    color: #004080;
+  }
+
+  
+
+
+
+ 
