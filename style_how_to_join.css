@@ -3,6 +3,8 @@ body {
     height: 100vh;
   }
   
+
+
   .navbar {
     background-color: #0f1d3d;
     padding: 20px 10px;
@@ -84,6 +86,105 @@ body {
   }
 
 a {
-    color: #0958a8; /* Change this to any color you want */
-    text-decoration: underline; /* Optional: controls underline */
+    color: #0958a8; 
+    text-decoration: underline; 
   }
+
+  .tryout-description a:hover {
+    color: #004080;
+  }
+
+  
+  .contact-us {
+    background-color: #0958a8;
+    padding-bottom: 20px;
+  }
+
+  .contact-us h2 {
+    font-family: 'Helvetica';
+    color: white;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  .contact-us p {
+    font-family: 'Helvetica';
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #3B5998;
+    color: white;
+  }
+
+  .facebook-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+  
+  .facebook-link:hover {
+    color: #004080;
+  }
+  
+  .facebook-link i {
+    margin-right: 8px;
+  }
+
+
+  .instagram-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+  
+  .instagram-link:hover {
+    color: #004080;
+  }
+  
+  .instagram-link i {
+    margin-right: 8px;
+  }
+
+  .mail-link {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Helvetica';
+    font-size: 16px;
+  }
+
+  .mail-link:hover {
+    color: #004080;
+  }
+
+  
+
+
+
+ 

@@ -100,16 +100,43 @@ body {
   }
 
 
-  .executive-team {
-    background-color: #0f1d3d;
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center; /* centers the grid itself */
     font-family: 'Helvetica';
     color: white;
-    position: relative;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
+    background-color: #003366;
+    padding: 20px 40px;
+    place-content: center;        /* Centers the whole grid inside the container */
+    max-width: fit-content;       /* Shrinks container to just fit the grid items */
+    margin: 0 auto;   
   }
+
+  
+  .team-section {
+    background-color: #003366;
+    padding: 20px 0; /* vertical spacing */
+  }
+
+
+
+  .team-member img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px; /* optional: makes square images look polished */
+  }
+
+  .executive-team h2 {
+  font-family: 'Helvetica';
+  color: white;
+  background-color: #003366;
+  padding: 40px;
+  margin: 0;
+ }
+
 
   .sponsors h2 {
     font-family: 'Helvetica';
@@ -234,6 +261,24 @@ body {
   .mail-link:hover {
     color: #004080;
   }
+
+
+
+  @media (min-width: 1300px) and (max-width: 1799px) {
+    .team-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* 5 columns for screens 1800px and wider */
+  @media (min-width: 1800px) {
+    .team-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  
+
 
   
 
